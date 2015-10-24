@@ -9,11 +9,11 @@ body {
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 p.small {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 a,
@@ -91,9 +91,9 @@ hr.star-first:after {
 }
 
 header {
-    text-align: center;
-    color: #fff;
-    background: #f44336;
+    text-align: left;
+    color: #2c3e50;
+    background: white;
 }
 
 header .container {
@@ -115,8 +115,12 @@ header .intro-text .name {
 }
 
 header .intro-text .skills {
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: 300;
+}
+header .intro-text .subskills {
+    font-size: 0.8em;
+    font-weight: 100;
 }
 
 @media(min-width:768px) {
@@ -126,11 +130,11 @@ header .intro-text .skills {
     }
 
     header .intro-text .name {
-        font-size: 4.75em;
+        font-size: 2.5em;
     }
 
     header .intro-text .skills {
-        font-size: 1.75em;
+        font-size: 20px;
     }
 }
 
@@ -187,7 +191,7 @@ section {
 
 section h2 {
     margin: 0;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 section.success {
@@ -201,7 +205,7 @@ section.success a:focus,
 section.success a:active,
 section.success a.active {
     outline: 0;
-    
+
 }
 
 @media(max-width:767px) {
@@ -469,19 +473,19 @@ footer .footer-below {
     opacity: 0;
 }
 .video-container {
-	position:relative;
-	padding-bottom:56.25%;
-	padding-top:30px;
-	height:0;
-	overflow:hidden;
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
 }
 
 .video-container iframe, .video-container object, .video-container embed {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 }
 @media screen and (max-width: 500px) {
     #inprot {
@@ -492,4 +496,38 @@ footer .footer-below {
     #inprotlink {
         display: none !important;
     }
+}
+.portfolio-skill-text{
+    background: #2c3e50; 
+    color:white;
+    padding: 5px;
+    margin: 3px;
+}
+.portfolio-skill-text:hover{
+    text-decoration: none;
+    color:white;
+    cursor: pointer; cursor: hand;
+}
+.quote{
+    font-style:italic;
+    font-size: 17px;
+}
+.quote-source{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.btn-cv {
+    font-size: 1em;
+    color: #2c3e50;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-cv:hover,
+.btn-cv:focus,
+.btn-cv:active,
+.btn-cv.active {
+    color: #18bc9c;
+    background: #fff;
 }

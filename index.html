@@ -53,11 +53,13 @@
                         <li class="hidden">
                             <a href="#page-top"></a>
                         </li>
-                       
                         <li class="page-scroll">
-                            <a href="#about">About</a>
+                            <a href="#page-top">About</a>
                         </li>
-                         <li class="page-scroll">
+                        <li class="page-scroll">
+                            <a href="#about">References</a>
+                        </li>
+                        <li class="page-scroll">
                             <a href="#portfolio">Projects</a>
                         </li>
                         <li class="page-scroll">
@@ -74,37 +76,69 @@
         <header>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <img class="img-responsive" src="img/profile.png" style="width:256px; height:256px;" alt="">
-                        <div class="intro-text">
-                            <span class="name">Mohamed Soliman</span>
-                            <hr class="star-first">
-                            <span class="skills">Web Developer - User Experience & Product Designer</span>
-                        </div>
+                    <div class="col-md-3">
+                        <img src="img/profile.png" style="width:230px; height:230px; margin-top:10px; margin-bottom:5px;" alt="">
+                    </div>
+                    <div class="col-md-1" > </div>
+
+                    <div class="intro-text col-md-8 name">
+                        <span class="name">
+                            Mohamed Soliman
+                        </span>
+                        <span class="skills">
+                            Web Developer/Designer<br>
+                            <span class="subskills">
+                                I am a full stack developer. My main web framework is Rails, and I use Ruby for scripting. I am learning the MEAN stack. Currently studying for a master degree in Human-Computer Interaction and Design at Aalto University, with major in User Modeling.
+                                I am highly motivated, fast learning, and team-type programmer. In my last job at Eventum Solutions, I was appointed as a team lead in only five months, despite being a junior developer. My work areas are Web Development, Interaction Design, Product Design, Machine Learning. My skill set includes Ruby, Python, Matlab, C++, Java/Javascript, Android, HTML, CSS.  
+                            </span>
+
+                        </span>
+
+                    </div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-3">
+                        <br>
+                        <a href="files/cv.pdf" class="btn-cv">
+                            <i class="fa fa-fw fa-paperclip"></i> Curriculum Vitae
+                        </a>
                     </div>
                 </div>
             </div>
         </header>
-         <!-- About Section -->
+
+        <!-- References Section -->
         <section class="success" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2>About</h2>
-                        <hr class="star-light">
+                        <h2>References</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-lg-offset-2">
-                        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-                    </div>
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <a href="mailto:mohamed.soliman@aalto.fi" class="btn btn-lg btn-outline">
-                            <img src="img/portfolio/black218.png" alt="" style="padding-bottom:4px;"/> Email Me
-                        </a>
+                    <div class="col-md-12" style="margin-top:20px;">
+
+                        <div class="col-md-4">
+                            <span class="quote"> 
+                                “Mohamed is hard-working and full of initiative and motivation. He has displayed considerable capabilities of putting our ideas into implementation and hence practically testing and verifying our research ideas.”
+                            </span>
+                            <br>
+                            <span class="quote-source">
+                                Marwan Torki<br>Assistant Professor, Alexandria University <br>
+                                <a href="mailto:mtorki@alexu.edu.eg">Contact</a>
+                            </span>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="quote"> 
+                                “Mohamed Soliman is a brilliant, pleasant and creative person. He has also demonstrated his ability to collaborate with
+                                other students in a very good spirit.”
+                            </span> 
+                            <br>
+                            <span class="quote-source">
+                                Caroline Appert<br>CNRS Research Scientist <br>
+                                <a href="mailto:caroline.appert@lri.fr">Contact</a>
+                            </span>
+                        </div>
+                        <div class="col-md-4"> </div>
                     </div>
                 </div>
             </div>
@@ -112,20 +146,22 @@
 
 
 
-       
+
 
         <!-- Portfolio Grid Section -->
         <section id="portfolio">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2>Projects</h2>
-                        <hr class="star-primary">
+                        <h2>Projects </h2>
                     </div>
                 </div>
-                
+                <br>
+                <a id="all-pro" style="color: #18bc9c;" class="portfolio-skill-text">All</a><a id="web" class="portfolio-skill-text">Web Development</a> <a id="interaction" class="portfolio-skill-text">Interaction Design</a> <a id="concept" class="portfolio-skill-text">Concept Design</a> <a id="machine" class="portfolio-skill-text">Machine Learning</a>
+
+                <br><br>
                 <div class="row">
-                     <div class="col-sm-4 portfolio-item">
+                    <div class="col-sm-4 portfolio-item concept-design" id="flowp">
                         <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
@@ -135,7 +171,7 @@
                             <img src="img/portfolio/flow.png" class="img-responsive" alt="flow">
                         </a>
                     </div>
-                    <div class="col-sm-4 portfolio-item">
+                    <div class="col-sm-4 portfolio-item intd" id="paper">
                         <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
@@ -145,8 +181,7 @@
                             <img src="img/portfolio/paperui.png" class="img-responsive" alt="PaperUI">
                         </a>
                     </div>
-                    
-                    <div class="col-sm-4 portfolio-item">
+                    <div class="col-sm-4 portfolio-item webd"  id="getgo">
                         <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
@@ -156,17 +191,7 @@
                             <img src="img/portfolio/getgo.png" class="img-responsive" alt="Getgo">
                         </a>
                     </div>
-                    <div class="col-sm-4 portfolio-item">
-                        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <i class="fa fa-search-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img src="img/portfolio/comico-1.png" class="img-responsive" alt="comico">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 portfolio-item">
+                    <div class="col-sm-4 portfolio-item ml" id="efhamni">
                         <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
@@ -176,8 +201,52 @@
                             <img src="img/portfolio/efhamni.png" class="img-responsive" alt="Efhamni">
                         </a>
                     </div>
-                   
-                    <div class="col-sm-4 portfolio-item">
+                    
+                    <div class="col-sm-4 portfolio-item webd intd" id="polyzoom">
+                        <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/polyzoom.png" class="img-responsive" alt="polyzoom">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item webd" id="movies">
+                        <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/movies.png" class="img-responsive" alt="Movies">
+                        </a>
+                    </div>
+
+
+
+                    <div class="col-sm-4 portfolio-item ml" id="obstacle">
+                        <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/obstacle.png" class="img-responsive" alt="Obstacle Avoidance">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item intd" id="comicop">
+                        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/comico-1.png" class="img-responsive" alt="comico">
+                        </a>
+                    </div>
+
+                    <div class="col-sm-4 portfolio-item webd" id="prescription">
                         <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
@@ -187,7 +256,9 @@
                             <img src="img/portfolio/pre.png" class="img-responsive" alt="Prescriptions">
                         </a>
                     </div>
+
                 </div>
+
             </div>
         </section>
 
@@ -196,10 +267,10 @@
             <div class="footer-above">
                 <div class="container" id="contact">
                     <div class="row">
-                        <div class="footer-col col-md-4">
-                            <h3>Contact</h3>
-                            <p><i class="fa fa-fw fa-phone"></i>+358417264751<br><i class="fa fa-fw fa-home"></i>Servin Maijan tie 12 C 33<br>02150 Espoo, Finland</p>
+                        <div class="footer-col col-md-2">
+
                         </div>
+
                         <div class="footer-col col-md-4">
                             <h3>Around the Web</h3>
                             <ul class="list-inline">
@@ -212,9 +283,9 @@
                                 <li>
                                     <a href="https://eg.linkedin.com/in/mohsoliman" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                                 </li>
-                                </ul>
+                            </ul>
                             <ul class="list-inline">
-                                
+
                                 <li>
                                     <a href="https://facebook.com/3osmaan" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                                 </li>
@@ -227,13 +298,15 @@
                             </ul>
                         </div>
                         <div class="footer-col col-md-4">
-                            <h3>Curriculum Vitae</h3>
-                            <p>View full CV from <a href="https://drive.google.com/file/d/0B-lqm-DzKRa8bk1kS3VwODBobjg/view?usp=sharing">here</a></p>
+                            <h3>Contact</h3>
+                            <p><i class="fa fa-fw fa-phone"></i>+358417264751<br><i class="fa fa-fw fa-home"></i>Servin Maijan tie 12 C 33<br>02150 Espoo, Finland</p>
                         </div>
+
+
                     </div>
                 </div>
             </div>
-            
+
         </footer>
 
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
@@ -257,7 +330,6 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <h2>PaperUI</h2>
-                                <hr class="star-primary">
                                 <p>Sketch your own interface on paper and make it work using a Leap Motion. Draw interface widgets on paper and link them to the widgets on your application.
                                     PaperUI interfaces through a music player, thus available mappable widgets include Play/Pause and Stop buttons as well as Volume and Seek sliders.</p>
                                 <ul class="list-inline item-details">
@@ -276,11 +348,11 @@
                                     </li>
 
                                 </ul>
-                                
+
                                 <div class="video-container">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/w8KE1EPb26w" frameborder="0" allowfullscreen></iframe>
+                                    <iframe class="youvid" width="560" height="315" src="https://www.youtube.com/embed/w8KE1EPb26w" frameborder="0" allowfullscreen></iframe>
                                 </div>
-                                
+
                                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
@@ -301,7 +373,6 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <h2>Efhamni</h2>
-                                <hr class="star-primary">
                                 <p>A program for general gesture recognition is presented and tested with isolated signs of sign
 
                                     language. Other than common systems for sign language recognition, this framework makes 
@@ -312,7 +383,8 @@
 
                                     discrete observation probability. The program also offers an easy way of initializing and 
 
-                                    training new gestures or signs by performing them several times in front of the camera.</p>
+                                    training new gestures or signs by performing them several times in front of the camera. Efhamni was awarded the second place
+                                    award on a national competition (IBTIECAR 2012), sponsored by Microsoft ATL (Advanced Technology Lab) in Cairo.</p>
                                 <ul class="list-inline item-details">
 
                                     <li>Date:
@@ -329,7 +401,7 @@
                                     </li>
                                 </ul>
                                 <p>
-                                <img src="img/portfolio/efhamni.png" class="img-responsive img-centered" alt="">
+                                    <img src="img/portfolio/efhamni.png" class="img-responsive img-centered" alt="">
                                 </p>
                                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
@@ -351,8 +423,8 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <h2>Getgo</h2>
-                                <hr class="star-primary">
-                                <p>GetGo is a responsive web based application that curates and organizes all the necessary information students need when traveling abroad to pursue their studies.</p>
+                                <p>GetGo is a responsive web based application that curates and organizes all the necessary information students need when traveling abroad to pursue their studies. Getgo was among top 10 projects in a national competition (Startup Programme - EPA) in Paris. 
+                                    The competition ranked projects based on their implementation and innovation.</p>
                                 <ul class="list-inline item-details">
 
                                     <li>Date:
@@ -370,7 +442,7 @@
 
                                 </ul>
                                 <div class="video-container">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/XNBFTwnKzr0" frameborder="0" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XNBFTwnKzr0" frameborder="0" allowfullscreen></iframe>
                                 </div>
                                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
@@ -392,7 +464,6 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <h2>Comico</h2>
-                                <hr class="star-primary">
                                 <p>Comico is a simple application for comic sketching.
 
                                     The simple and easy interface offers all the functionality needed, including panels managing, free hand 
@@ -441,16 +512,15 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <h2>Flow</h2>
-                                <hr class="star-primary">
                                 <p>flow lets you instantly record and share any thought popping up in your mind into your timeline. With flow, you can post short voice messages- thoughts -to your timeline, mention your friends, add a trending tag to the thought, and listen to others thoughts on the same -or a different- trend!</p>
                                 <ul class="list-inline item-details">
-                                    
+
                                     <li>Date:
                                         <strong>October 2015
                                         </strong>
                                     </li>
                                     <li>Field:
-                                        <strong>Product Design
+                                        <strong>Concept Design
                                         </strong>
                                     </li>
                                     <li>
@@ -461,7 +531,7 @@
                                         <strong><a id="inprotlink" href="https://invis.io/V54641U7Q">Prototype</a>
                                         </strong>
                                     </li>
-                                    
+
                                 </ul>
                                 <p>
                                     <iframe id="inprot" width="428" height="866" src="http://invis.io/MJ4641VDW" frameborder="0" allowfullscreen></iframe>
@@ -486,10 +556,9 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <h2>Medicine Prescription</h2>
-                                <hr class="star-primary">
                                 <p>A simple pharmacy managing app for medicine prescription assignment, using <a href="http://getmdl.io">material design lite</a> for interface design </p>
                                 <ul class="list-inline item-details">
-                                    
+
                                     <li>Date:
                                         <strong>October 2015
                                         </strong>
@@ -509,8 +578,148 @@
                                 </ul>
                                 <p>
                                     <img src="img/portfolio/pre.png" class="img-responsive img-centered" alt="">
-                             
+
                                 </p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>PolyZoom</h2>
+                                <p>We implemented PolyZoom (a maps extension) scientific paper. PolyZoom is a multi-scale and multi-focus navigation technique in which users progressively build hierarchies of focus regions that are rendered on the screen simultaneously.</p>
+                                <ul class="list-inline item-details">
+
+                                    <li>Date:
+                                        <strong>February 2015
+                                        </strong>
+                                    </li>
+                                    <li>Field:
+                                        <strong>Web Development/Interaction Design
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <strong><a href="https://engineering.purdue.edu/~elm/projects/polyzoom/polyzoom.pdf">Source Paper</a>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <strong><a href="https://github.com/domhorvath/Polyzoom_hcid">Github</a>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <strong><a href="http://thoughtflow.me/polyzoom/">Demo</a> 
+                                        </strong> 
+                                    </li>
+                                </ul>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dnjzmPF7CMc" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Oscars/Ratings Visualization</h2>
+                                <p>A data visualization project to answer the question: Do user ratings match the number of Academy Awards given to a movie?</p>
+                                <ul class="list-inline item-details">
+
+                                    <li>Date:
+                                        <strong>December 2014
+                                        </strong>
+                                    </li>
+                                    <li>Field:
+                                        <strong>Web Development/Info Visualization
+                                        </strong>
+                                    </li>
+                                    
+                                    <li>
+                                        <strong><a href="http://thoughtflow.me/movies/">Website</a> 
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <strong><a href="files/InfoViz.pdf">Presentation</a> 
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <p>
+                                    <img src="img/portfolio/movies.png" class="img-responsive img-centered" alt="">
+
+                                </p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Mobile App for Vision Impaired Navigation</h2>
+                                <p>A mobile app for obstacle detection /avoidance for the vision impaired. The approach was implemented in Android and using OpenCV library for computer vision. The obstacles were found using optical flow. Both dense and sparse optical flow calculations were performed. The research conducted in this regard was funded by Academy of Scientific Research and Technology (ASRT) in Egypt</p>
+                                <ul class="list-inline item-details">
+
+                                    <li>Date:
+                                        <strong>July 2014
+                                        </strong>
+                                    </li>
+                                    <li>Field:
+                                        <strong>Computer Vision/Machine Learning
+                                        </strong>
+                                    </li>
+                                    
+                                    <li>Supervisor:
+                                        <strong> <a href="mailto:mtorki@alexu.edu.eg">Prof. Marwan Torki</a>
+                                        </strong>
+                                    </li>
+                                    
+
+                                </ul>
+                                <p>
+                                    <img src="img/portfolio/obstacle.png" class="img-responsive img-centered" alt="Obstacle Avoidance" />
+                                </p>
+                                
                                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
@@ -524,13 +733,14 @@
 
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
+        
 
         <!-- Plugin JavaScript -->
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
         <script src="js/classie.js"></script>
         <script src="js/cbpAnimatedHeader.js"></script>
 
-       
+
         <!-- Custom Theme JavaScript -->
         <script src="js/freelancer.js"></script>
 
