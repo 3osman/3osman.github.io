@@ -116,9 +116,11 @@ header .intro-text .name {
 
 header .intro-text .skills {
     font-size: 1.5em;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 300;
 }
 header .intro-text .subskills {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 0.8em;
     font-weight: 100;
 }
@@ -530,4 +532,7 @@ footer .footer-below {
 .btn-cv.active {
     color: #18bc9c;
     background: #fff;
+}
+.col-md-4:focus {
+    outline: none;
 }

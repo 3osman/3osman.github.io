@@ -93,3 +93,39 @@ $('.close-modal').on('click', function () {
     //$('#video').stopVideo();
     $('.youvid')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
 });
+
+$(document).ready(function(){
+  $('#refs').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots:true,
+      arrows:false,
+      draggable:false,
+      focusOnSelect:false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 770,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 481,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+    ]
+  });
+});
