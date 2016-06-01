@@ -44,7 +44,13 @@ function resetColor() {
     }
 }
 //show/hide on filter click
-
+$(document).keypress(function(e) { 
+    if (e.keyCode == 27) { 
+        $(".portfolio-modal").fadeOut(500);
+        //or
+        window.close();
+    } 
+});
 $('#web').click(function () {
     resetColor();
     this.style.color = "#18bc9c";
