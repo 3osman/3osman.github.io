@@ -536,3 +536,7 @@ footer .footer-below {
 .col-md-4:focus {
     outline: none;
 }
+.comment{
+    font-size: 16px;
+    font-style: italic;
+}
