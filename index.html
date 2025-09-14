@@ -1,208 +1,443 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Mo Soliman</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Draco is free PSD &amp; HTML template by @afnizarnur">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/kube.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/custom.min.css" />
-    <link rel="shortcut icon" href="img/favicon.png" />
-	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-	<style>
-		
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mo Soliman | Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+		}
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.5), transparent);
+        }
+
+        .experience-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
 </head>
-<body>
-	<!-- Navigation -->
-	<div class="main-nav">
-		<div class="container">
-			<header class="group top-nav">
-				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
-				    <span class="logo">Menu</span>
-				</div>
-			    <nav id="navbar-1" class="navbar item-nav">
-				    <ul>
-				        <li class="active"><a href="#about">About</a></li>
-				        <li><a href="#experiences">Experience</a></li>
-				        <li><a href="#education">Education</a></li>
-						<li><a href="#publications">Publications</a></li>
-						<li><a href="#contact">Contact</a></li>
-				    </ul>
-				</nav>
-			</header>
-		</div>
-	</div>
 
-	<!-- Introduction -->
-	<div class="intro section" id="about">
-		<div class="container">
-			<div class="units-row units-split wrap">
-				<div style="margin-top: 40px;" class="unit-20">
-					<img src="img/ava.png" alt="Avatar">
-				</div>
-				<div class="unit-80">
-					<p><h2>Mo(hamed) Soliman</h2></p>
-					<h1>lives in<br><span id="typed"></span></h1>
-				</div>
-				<p>
-					Mo is a software Engineer based in Dublin with 9+ years of experience in building user facing products. Language and framework-agnostic, with experience in multiple frameworks, the most proficient one being Rails. Previous spells include working at Booking.com, working in San Francisco and leading a web team there (1.5 years, Smule.com), and 2 publications as first author in peer-reviewed conferences.
-					<span style="font-weight: bold;">Mo is currently building products for Microsoft.</span>	
-				</p>
-			</div>
-		</div>
-	</div>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold gradient-text">Mo Soliman</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-blue-500 transition">About</a>
+                    <a href="#experience" class="text-gray-600 hover:text-blue-500 transition">Experience</a>
+                    <a href="#education" class="text-gray-600 hover:text-blue-500 transition">Education</a>
+                    <a href="#publications" class="text-gray-600 hover:text-blue-500 transition">Publications</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-500 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-	<!-- Work Experience -->
-	<div class="work section second" id="experiences">
-		<div class="container">
-			<h1>Work<br>Experience</h1>
-			<ul class="work-list">
-				<li>May 2021 - Present</li>
-				<li><a href="#">Microsoft</a></li>
-				<li>Dublin, Ireland</li>
-				<li style="font-weight: bold; color:black;">Senior Software Engineer</li>
-				<li style="color:black;">Member of OneDrive and SharePoint (ODSP) team in Dublin, Ireland.</li>
-			</ul>
-			<ul class="work-list">
-				<li>May 2021 - April 2022</li>
-				<li><a href="https://www.youtube.com/watch?v=VX1HOJAJT_o">Microsoft</a></li>
-				<li>Berlin, Germany - Remote</li>
-				<li style="font-weight: bold; color:black;">Software Engineer II</li>
-				<li style="color:black;">Member of Modern Workplace Transformation (MWT) team in Dublin, Ireland.</li>
-			</ul>
-			<ul class="work-list">
-				<li>January - May 2021</li>
-				<li><a href="https://careem.com">Careem (an Uber Company)</a></li>
-				<li>Berlin, Germany</li>
-				<li style="font-weight: bold; color:black;">Software Engineer II</li>
-				<li style="color:black;">Member of platform engineering team (stack: Java, Kotlin, Spring).</li>
-			</ul>
-			<ul class="work-list">
-				<li>September 2020 - January 2021</li>
-				<li><a href="https://klue.com/">Klue</a></li>
-				<li>Amsterdam, Netherlands</li>
-				<li style="font-weight: bold; color:black;">Software Engineer</li>
-				<li style="color:black;">Working on product features and ML/NLP pipeline (stack: Python, Rails, ElasticSearch, PostgreSQL).</li>
-			</ul>
-			<ul class="work-list">
-				<li>December 2019 - August 2020</li>
-				<li><a href="https://booking.com">Booking</a></li>
-				<li>Amsterdam, Netherlands</li>
-				<li style="font-weight: bold; color:black;">Software Developer</li>
-				<li style="color:black;">Member of the Price Display Team (Software Stack: Perl, Java).</li>
-			</ul>
-			<ul class="work-list">
-				<li>June 2018 - September 2019</li>
-				<li><a href="https://smule.com">Smule</a></li>
-				<li>San Francisco, California</li>
-				<li style="font-weight: bold; color:black;">Software Development Engineer II and Team Lead</li>
-				<li style="color:black;">Led the web team (4 people), provided time planning and development plans for product features.</li>
-			</ul>
-			<ul class="work-list">
-				<li>January 2017 - March 2018</li>
-				<li><a href="https://hci.cs.uni-saarland.de/">Cluster of Excellence MMCI, Saarland University</a></li>
-				<li>Saarbrucken, Germany</li>
-				<li style="font-weight: bold; color:black;">Visiting Researcher</li>
-				<li style="color:black;">Research with the Human-Computer Interaction group in Saarland University.</li>
-			</ul>
-			
-		</div>
-	</div>
-	
-	<!-- Education -->
-	<div class="skills section second" id="education">
-		<div class="container">
-			<h1>Education</h1>
-			<h2>Degrees</h2>
-			<ul class="skill-list list-flat">
-				<li>2014 - 2017</li>
-				<li style="font-weight: bold; color:black;">Master’s Degree, EIT Digital Computer Science with a minor in Innovation and Entrepreneurship</li>
-				<li>Paris-Sud University, France - Aalto University, Finland</li>
-				<li><a href="https://aaltodoc.aalto.fi/handle/123456789/24711">Thesis: Combining User-Centered Design and Persuasive Design for Enhancing Consumer Products.</a></li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>2007 - 2012</li>
-				<li style="font-weight: bold; color:black;">Bachelor's degree in Computer Systems and Engineering</li>
-				<li>Alexandria University, Egypt</li>
-				<li><a href="https://drive.google.com/file/d/0B-lqm-DzKRa8dTlYQ0x1cEJNMEE/view">Thesis: Efhamni: American Sign Language recognition system using Microsoft Kinect Sensor.</a></li>
-			</ul>
-			<h2>Summer Schools</h2>
-			<ul class="skill-list list-flat">
-				<li>July 2017</li>
-				<li style="font-weight: bold; color:black;">ACM SIGCHI Summer School on Computational Interaction</li>
-				<li>ETH Zurich</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>July 2015</li>
-				<li style="font-weight: bold; color:black;">Security and Privacy in Digital Life Summer School</li>
-				<li>University of Trento, Italy</li>
-			</ul>
-		</div>
-	</div>
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
+                <img src="img/ava.png" alt="Mo Soliman" class="rounded-full w-60 h-60 object-cover shadow-lg">
+            </div>
+            <div class="md:w-2/3 md:pl-12">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Mo(hamed) Soliman</h1>
+                <div class="flex items-center text-xl text-gray-600 mb-6">
+                    <i data-feather="map-pin" class="mr-2"></i>
+                    <span>Dublin, Ireland</span>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                    Software Engineer with 10+ years of experience in building user-facing products.
+                    Language and framework-agnostic, with expertise in multiple frameworks,
+                    most proficient in Rails. Currently building products for Microsoft.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact"
+                        class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">Contact Me</a>
+                    <a href="#experience"
+                        class="px-6 py-3 border border-blue-500 text-blue-500 rounded-lg hover:bg-blue-50 transition">View
+                        Experience</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Publications -->
-	<div class="award section second" id="publications">
-		<div class="container">
-			<h1>Publications</h1>
-			<ul class="award-list list-flat">
-				<li><a href="https://dl.acm.org/doi/10.1145/3279778.3279799">FingerInput: Capturing Expressive Single-Hand Thumb-to-Finger Microgestures</a></li>
-				<li><span style="font-style: italic; text-decoration: underline;">Mohamed Soliman</span>, Franziska Mueller, Lena Hegemann, Joan Sol Roo, Christian
-					Theobalt, and Jurgen Steimle</li>
-				<li style="font-weight: bold; color:black; font-style:italic;">Best Academic Paper Award</li>
-				<li>ACM International Conference on Interactive Surfaces and Spaces 2018</li>
-			</ul>
-			<ul class="award-list list-flat">
-				<li><a href="https://ieeexplore.ieee.org/document/7821028">Towards Gaze-based Video Annotation</a></li>
-				<li><span style="font-style: italic; text-decoration: underline;">Mohamed Soliman</span>, Hamed R. Tavakoli, and Jorma Laaksonen</li>
-				<li>IEEE International Conference on Image Processing Theory, Tools and Applications 2016</li>
-			</ul>
-		</div>
-	</div>
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 gradient-text">Work Experience</h2>
+                <div class="section-divider w-24 mx-auto my-4"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">My professional journey through various companies and roles
+                </p>
+            </div>
 
+            <div class="space-y-8">
+                <!-- Microsoft -->
+                <div class="experience-card bg-gray-50 rounded-xl p-6 transition duration-300" data-aos="fade-up">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Microsoft</h3>
+                            <p class="text-gray-600">Senior Software Engineer</p>
+                        </div>
+                        <div class="text-blue-500 font-medium mt-2 md:mt-0">May 2021 - Present</div>
+                    </div>
+                    <div class="flex items-center text-gray-600 mb-4">
+                        <i data-feather="map-pin" class="mr-2"></i>
+                        <span>Dublin, Ireland</span>
+                    </div>
+                    <p class="text-gray-700">
+                        Member of OneDrive and SharePoint (ODSP) team in Dublin, Ireland.
+                    </p>
+                </div>
 
-	<!-- Contact -->
+                <!-- Microsoft (Remote) -->
+                <div class="experience-card bg-gray-50 rounded-xl p-6 transition duration-300" data-aos="fade-up">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Microsoft</h3>
+                            <p class="text-gray-600">Software Engineer II</p>
+                        </div>
+                        <div class="text-blue-500 font-medium mt-2 md:mt-0">May 2021 - April 2022</div>
+                    </div>
+                    <div class="flex items-center text-gray-600 mb-4">
+                        <i data-feather="map-pin" class="mr-2"></i>
+                        <span>Berlin, Germany - Remote</span>
+                    </div>
+                    <p class="text-gray-700">
+                        Member of Modern Workplace Transformation (MWT) team in Dublin, Ireland.
+                    </p>
+                </div>
 
-	<footer>
-		<div class="container" id="contact">
-			<div class="units-row">
-				<div class="unit-50">
-					<h1>Contact</h1>
-				</div>
-				<div class="unit-50">
-					<ul class="social list-flat right">
-						<li>
-							<a href="#" class="cryptedmail"
-							data-name="mo"
-							data-domain="3osman"
-							data-tld="com"
-							onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;">
-								<i class="fa fa-send"></i>
-							</a>
-						</li>
-						<li><a href="http://linkedin.com/in/3osman"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="http://twitter.com/3osman"><i class="fa fa-twitter"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
+                <!-- Careem -->
+                <div class="experience-card bg-gray-50 rounded-xl p-6 transition duration-300" data-aos="fade-up">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Careem (an Uber Company)</h3>
+                            <p class="text-gray-600">Software Engineer II</p>
+                        </div>
+                        <div class="text-blue-500 font-medium mt-2 md:mt-0">January - May 2021</div>
+                    </div>
+                    <div class="flex items-center text-gray-600 mb-4">
+                        <i data-feather="map-pin" class="mr-2"></i>
+                        <span>Berlin, Germany</span>
+                    </div>
+                    <p class="text-gray-700">
+                        Member of platform engineering team (stack: Java, Kotlin, Spring).
+                    </p>
+                </div>
 
-	<!-- Javascript -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/typed.min.js"></script>
-    <script src="js/kube.min.js"></script>
-    <script src="js/site.js"></script>
+                <!-- Klue -->
+                <div class="experience-card bg-gray-50 rounded-xl p-6 transition duration-300" data-aos="fade-up">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Klue</h3>
+                            <p class="text-gray-600">Software Engineer</p>
+                        </div>
+                        <div class="text-blue-500 font-medium mt-2 md:mt-0">September 2020 - January 2021</div>
+                    </div>
+                    <div class="flex items-center text-gray-600 mb-4">
+                        <i data-feather="map-pin" class="mr-2"></i>
+                        <span>Amsterdam, Netherlands</span>
+                    </div>
+                    <p class="text-gray-700">
+                        Working on product features and ML/NLP pipeline (stack: Python, Rails, ElasticSearch,
+                        PostgreSQL).
+                    </p>
+                </div>
+
+                <!-- Booking -->
+                <div class="experience-card bg-gray-50 rounded-xl p-6 transition duration-300" data-aos="fade-up">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Booking</h3>
+                            <p class="text-gray-600">Software Developer</p>
+                        </div>
+                        <div class="text-blue-500 font-medium mt-2 md:mt-0">December 2019 - August 2020</div>
+                    </div>
+                    <div class="flex items-center text-gray-600 mb-4">
+                        <i data-feather="map-pin" class="mr-2"></i>
+                        <span>Amsterdam, Netherlands</span>
+                    </div>
+                    <p class="text-gray-700">
+                        Member of the Price Display Team (Software Stack: Perl, Java).
+                    </p>
+                </div>
+
+                <!-- Smule -->
+                <div class="experience-card bg-gray-50 rounded-xl p-6 transition duration-300" data-aos="fade-up">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Smule</h3>
+                            <p class="text-gray-600">Software Development Engineer II and Team Lead</p>
+                        </div>
+                        <div class="text-blue-500 font-medium mt-2 md:mt-0">June 2018 - September 2019</div>
+                    </div>
+                    <div class="flex items-center text-gray-600 mb-4">
+                        <i data-feather="map-pin" class="mr-2"></i>
+                        <span>San Francisco, California</span>
+                    </div>
+                    <p class="text-gray-700">
+                        Led the web team (4 people), provided time planning and development plans for product features.
+                    </p>
+                </div>
+
+                <!-- MMCI -->
+                <div class="experience-card bg-gray-50 rounded-xl p-6 transition duration-300" data-aos="fade-up">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Cluster of Excellence MMCI, Saarland University</h3>
+                            <p class="text-gray-600">Visiting Researcher</p>
+                        </div>
+                        <div class="text-blue-500 font-medium mt-2 md:mt-0">January 2017 - March 2018</div>
+                    </div>
+                    <div class="flex items-center text-gray-600 mb-4">
+                        <i data-feather="map-pin" class="mr-2"></i>
+                        <span>Saarbrucken, Germany</span>
+                    </div>
+                    <p class="text-gray-700">
+                        Research with the Human-Computer Interaction group in Saarland University.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 gradient-text">Education</h2>
+                <div class="section-divider w-24 mx-auto my-4"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">My academic background and qualifications</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Master's Degree -->
+                <div class="bg-white rounded-xl p-6 shadow-sm" data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-2">Master's Degree</h3>
+                    <p class="text-gray-600 mb-4">EIT Digital Computer Science with a minor in Innovation and
+                        Entrepreneurship</p>
+                    <div class="flex items-center text-gray-600 mb-4">
+                        <i data-feather="calendar" class="mr-2"></i>
+                        <span>2014 - 2017</span>
+                    </div>
+                    <div class="flex items-center text-gray-600 mb-4">
+                        <i data-feather="map-pin" class="mr-2"></i>
+                        <span>Paris-Sud University, France - Aalto University, Finland</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Thesis: Combining User-Centered Design and Persuasive Design for Enhancing Consumer Products.
+                    </p>
+                    <a href="https://aaltodoc.aalto.fi/handle/123456789/24711"
+                        class="text-blue-500 hover:underline flex items-center">
+                        <i data-feather="external-link" class="mr-2"></i>
+                        View Thesis
+                    </a>
+                </div>
+
+                <!-- Bachelor's Degree -->
+                <div class="bg-white rounded-xl p-6 shadow-sm" data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-2">Bachelor's Degree</h3>
+                    <p class="text-gray-600 mb-4">Computer Systems and Engineering</p>
+                    <div class="flex items-center text-gray-600 mb-4">
+                        <i data-feather="calendar" class="mr-2"></i>
+                        <span>2007 - 2012</span>
+                    </div>
+                    <div class="flex items-center text-gray-600 mb-4">
+                        <i data-feather="map-pin" class="mr-2"></i>
+                        <span>Alexandria University, Egypt</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Thesis: Efhamni: American Sign Language recognition system using Microsoft Kinect Sensor.
+                    </p>
+                    <a href="https://drive.google.com/file/d/0B-lqm-DzKRa8dTlYQ0x1cEJNMEE/view"
+                        class="text-blue-500 hover:underline flex items-center">
+                        <i data-feather="external-link" class="mr-2"></i>
+                        View Thesis
+                    </a>
+                </div>
+            </div>
+
+            <!-- Summer Schools -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold mb-6 text-center gradient-text">Summer Schools</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-xl p-6 shadow-sm" data-aos="fade-up">
+                        <h4 class="text-lg font-semibold mb-2">ACM SIGCHI Summer School on Computational Interaction
+                        </h4>
+                        <div class="flex items-center text-gray-600 mb-2">
+                            <i data-feather="calendar" class="mr-2"></i>
+                            <span>July 2017</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i data-feather="map-pin" class="mr-2"></i>
+                            <span>ETH Zurich</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-sm" data-aos="fade-up">
+                        <h4 class="text-lg font-semibold mb-2">Security and Privacy in Digital Life Summer School</h4>
+                        <div class="flex items-center text-gray-600 mb-2">
+                            <i data-feather="calendar" class="mr-2"></i>
+                            <span>July 2015</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i data-feather="map-pin" class="mr-2"></i>
+                            <span>University of Trento, Italy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 gradient-text">Publications</h2>
+                <div class="section-divider w-24 mx-auto my-4"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">My research contributions and academic papers</p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- FingerInput -->
+                <div class="bg-gray-50 rounded-xl p-6" data-aos="fade-up">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 text-blue-600 rounded-full p-3 mr-4">
+                            <i data-feather="award"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">FingerInput: Capturing Expressive Single-Hand
+                                Thumb-to-Finger Microgestures</h3>
+                            <p class="text-gray-600 mb-2">
+                                Mohamed Soliman, Franziska Mueller, Lena Hegemann, Joan Sol Roo, Christian Theobalt, and
+                                Jurgen Steimle
+                            </p>
+                            <div
+                                class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full inline-flex items-center mb-3">
+                                <i data-feather="award" class="mr-1"></i>
+                                Best Academic Paper Award
+                            </div>
+                            <p class="text-gray-700 mb-3">
+                                ACM International Conference on Interactive Surfaces and Spaces 2018
+                            </p>
+                            <a href="https://dl.acm.org/doi/10.1145/3279778.3279799"
+                                class="text-blue-500 hover:underline flex items-center">
+                                <i data-feather="external-link" class="mr-2"></i>
+                                View Publication
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gaze-based Video Annotation -->
+                <div class="bg-gray-50 rounded-xl p-6" data-aos="fade-up">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 text-blue-600 rounded-full p-3 mr-4">
+                            <i data-feather="file-text"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Towards Gaze-based Video Annotation</h3>
+                            <p class="text-gray-600 mb-2">
+                                Mohamed Soliman, Hamed R. Tavakoli, and Jorma Laaksonen
+                            </p>
+                            <p class="text-gray-700 mb-3">
+                                IEEE International Conference on Image Processing Theory, Tools and Applications 2016
+                            </p>
+                            <a href="https://ieeexplore.ieee.org/document/7821028"
+                                class="text-blue-500 hover:underline flex items-center">
+                                <i data-feather="external-link" class="mr-2"></i>
+                                View Publication
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 gradient-text">Get In Touch</h2>
+                <div class="section-divider w-24 mx-auto my-4"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Feel free to reach out for collaborations or just a friendly
+                    hello</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12">
+                <a href="http://linkedin.com/in/3osman"
+                    class="flex items-center text-gray-700 hover:text-blue-500 transition">
+                    <div class="bg-white p-4 rounded-full shadow-md mr-4">
+                        <i data-feather="linkedin" class="text-blue-600"></i>
+                    </div>
+                    <span class="font-medium">LinkedIn</span>
+                </a>
+                <a href="http://twitter.com/3osman"
+                    class="flex items-center text-gray-700 hover:text-blue-400 transition">
+                    <div class="bg-white p-4 rounded-full shadow-md mr-4">
+                        <i data-feather="twitter" class="text-blue-400"></i>
+                    </div>
+                    <span class="font-medium">Twitter</span>
+                </a>
+                <a href="#" data-name="mo" data-domain="3osman" data-tld="com"
+                    onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"
+                    class="flex items-center text-gray-700 hover:text-red-500 transition">
+                    <div class="bg-white p-4 rounded-full shadow-md mr-4">
+                        <i data-feather="mail" class="text-red-500"></i>
+                    </div>
+                    <span class="font-medium">Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Mo Soliman. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script>
-		function newTyped(){}$(function(){$("#typed").typed({
-		// Change to edit type effect
-		strings: ["Dublin", "Ireland"],
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
 
-		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function () {
+            // Implement mobile menu functionality here
+            alert('Mobile menu would open here in a complete implementation');
+        });
     </script>
 </body>
+
 </html>
